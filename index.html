@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./assets/style/style.css">
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+        </style>
+    </head>
+    <body dir="rtl" class="primaryColorBg">
+        <section class="header-sec w-screen h-24 flex flex-row ">
+            <div class="w-3/4"></div>
+            <div class="searchBar flex w-1/4 h-full justify-center items-center pe-5">
+                <form class="flex items-center w-full">
+                    <label for="simple-search" class="sr-only">Search</label>
+                    <div class="relative w-full">
+                        <input
+                            type="text"
+                            id="simple-search"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 placeholder: text-right"
+                            placeholder="جستجو..."
+                            required
+                        >
+                    </div>
+                    <button type="submit" class="primaryButton p-2.5 ms-2 text-sm font-medium text-white  rounded-lg ">
+                        <svg
+                            class="w-4 h-4"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                            />
+                        </svg>
+                        <span class="sr-only">Search</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section class="hero-sec bg-white w-screen h-60 flex flex-row px-5 pt-5">
+            <div class="w-1/4 flex justify-center items-center">
+                <div class="bg-white absolute top-16 profile-container w-64 h-64 flex justify-center items-center">
+                    <img src="./assets/img/diego-hernandez-MSepzbKFz10-unsplash.jpg" alt="" class="profile-pic">
+                </div>
+            </div>
+            <div class="w-3/4 ">
+                <div class=" w-full">
+                    <h1 class="UserName font-bold">متین روانبخش</h1>
+                </div>
+                <div class="w-full mt-3 ">
+                    <h1 class="UserTitle">مدیر وبسایت</h1>
+                </div>
+                <div class="w-full flex h-30 flex-row mt-10 items-center">
+                    <label for="degree" class="primaryColor me-1">آخرین مدرک تحصیلی :</label>
+                    <input type="text" id="degree" class="inputs me-5">
+                    <label for="degree" class="primaryColor me-1">تاریخ تولد :</label>
+                    <input type="text" id="degree" class="inputs me-5">
+                    <label for="degree" class="primaryColor me-1">سابقه حضور در فناوران :</label>
+                    <input type="text" id="degree" class="inputs">
+                </div>
+            </div>
+        </section>
+        <section class="px-5 w-full bg-white flex justify-center pb-10">
+            <div class="w-[90%] overflow-x-auto shadow-md sm:rounded-lg flex justify-center items-center">
+                <table class="w-full text-sm text-left rtl:text-center text-gray-500">
+                    <thead class="text-xs text-gray-700 uppercase primaryColorBg">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                سمت
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                تیم
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                سطح
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                ارشد
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                تاریخ شروع
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                تاریخ پایان
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                مشاور
+                            </th>
+                            <td class="px-6 py-4">
+                                مشاورین
+                            </td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4">
+                                خیر
+                            </td>
+                            <td class="px-6 py-4">
+                                1395/06/03
+                            </td>
+                            <td class="px-6 py-4">
+                                1400/06/03
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                طراح
+                            </th>
+                            <td class="px-6 py-4">
+                                طراحان
+                            </td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4">
+                                بله
+                            </td>
+                            <td class="px-6 py-4">
+                                1403/06/03
+                            </td>
+                            <td class="px-6 py-4">
+                                1403/06/03
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="w-full flex flex-col">
+            <div class="w-full h-auto flex justify-center items-center mt-5">
+                <h3 class="text-xl font-semibold secondaryColor">تیم ها</h3>
+            </div>
+            <div class="w-full flex justify-center items-center flex-col ">
+                <div class="w-full flex flex-row teamBanner text-white mt-3 justify-center py-4">
+                    <div class="w-[90%] flex flex-row rounded-sm ">
+                        <div class="flex w-1/12 justify-center">
+                            <div class="flex items-center py-1 text-gray-900 whitespace-nowrap team-profile">
+                            </div>
+                        </div>
+                        <div class="flex items-center ">
+                            <p class="px-10 w-full">
+                                تیم پشتیبانی
+                            </p>
+                        </div>
+                        <div class="flex w-4/12 items-center justify-center">
+                            <div class="flex flex-grow justify-center">تعداد اعضای تیم</div>
+                        </div>
+                        <div class="flex  w-5/12 items-center justify-center">
+                            <div class="flex flex-grow justify-center">شرح مختصر تیم</div>
+                        </div>
+
+                        
+                    </div>  
+                    
+                    
+
+
+                </div>
+                <div class="w-[90%] overflow-x-auto shadow-md sm:rounded-lg">
+                    <div class="w-full flex flex-col">
+
+                        <div class="w-full h-auto bg-white flex flex-row mt-3 rounded-sm py-2">
+                            <div class="flex w-1/12 justify-center">
+                                <div class="flex items-center py-1 text-gray-900 whitespace-nowrap team-profile">
+                                    <img src="./assets/img/diego-hernandez-MSepzbKFz10-unsplash.jpg" alt="" class="w-10 h-10 rounded-full object-contain">
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="px-10 w-full">
+                                    تیم پشتیبانی
+                                </p>
+                            </div>
+                            <div class="flex w-4/12 items-center justify-center">
+                                <div class="flex flex-grow justify-center">تعداد اعضای تیم</div>
+                            </div>
+                            <div class="flex  w-5/12 items-center justify-center">
+                                <div class="flex flex-grow justify-center text-xs">
+                                    گروه هوش تجاري «فناوران» با ماموريت طراحي و ايجاد محصولات متنوع در حوزه هوش تجاري تاسيس گرديد. در حال حاضر سبدي از محصولات هوش تجاري در گروه BI شرکت «فناوران» در حال طراحي و پياده‌سازي مي‌باشد.
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+         
+    </body>
+</html>

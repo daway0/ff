@@ -1,0 +1,43 @@
+.title-icon {
+  width: 16px;
+  height: 55px;
+  background-color: #366C90;
+  position: absolute;
+  right: 56px;
+  top: 140px;
+}
+
+.keyMembers {
+  background: rgba(231, 231, 237, 0.32);
+}
+.keyMembers h3 {
+  color: rgb(54, 108, 144);
+}
+.keyMembers .titleStyle {
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background-color: rgb(54, 108, 144);
+  display: block;
+}
+.keyMembers > div :nth-child(1) span {
+  left: 0;
+}
+.keyMembers .memberKeyTable {
+  border: 2px solid red;
+}
+.keyMembers .memberKeyTable .member {
+  width: 200px;
+  background-color: white;
+}
+.keyMembers .memberKeyTable .member > div {
+  height: auto;
+}
+.keyMembers .memberKeyTable .member > div img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+.keyMembers .memberKeyTable .member > div h4 {
+  margin-bottom: 2px;
+}/*# sourceMappingURL=teamStyle.css.map */

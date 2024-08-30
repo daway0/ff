@@ -1,497 +1,81 @@
-
-.shdow{
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-}
-.first-row,.second-row,.third-row{
-    /* box-shadow: 3px 3px 3px 3px #ddd; */
-    border-radius: 10px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-.div-with-boxshadow{
-    /* box-shadow: 3px 3px 3px 3px #ddd; */
-    border-radius: 10px;
-    padding: 35px;
-}
-.left-div-content{
-    z-index: 10;
-    margin-right: 2%;
-    border-radius: 10px;
-    border:1px solid #ddd;
-    float: left;
-    width: 99%;
-    min-height: 120px;
-}
-
-.div-text{
-    z-index: 9;
-    position: relative;
-    position: absolute;
-    right: -80px;
-    width: 200px;
-}
-
-.div-text > p {
-    transform: rotate(90deg);
-    width: 200px;
-    text-align: center;
-}
-.box-item{
-    /* box-shadow: 1px 1px 5px 1px #ddd; */
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-.img-item-carosel{
-    width: auto;
-    cursor: pointer;
-    margin-right: 25px;
-    margin-left: 25px;
-}
-
-.img-item-carosel > span{
-    font-size: 14px;
-    width: auto;
-    padding-right: 2px;
-    padding-left: 2px;
-}
-.img-item-carosel > img{
-    width: 60px !important;
-}
-.img-item-level{
-    width: 70px;
-    cursor: pointer;
-}
-
-.img-item-level + span{
-    text-align: center;
-    font-size: 14px !important;
-}
-.img-item-level-superior + span{
-    margin-right: 25px;
-}
-.img-gender{
-    width: 28px !important;
-    height: 28px !important;
-}
-
-.divaftermanagerspan{
-
-    flex-direction: column;
-    /*background-color: #bddfcb;
-    border-radius: 15px;
-    box-shadow: 8px 8px 8px 8px #ddd;*/
-    position: absolute;
-    width: 600px;
-    height: 400px;
-    right: 55%;
-    bottom: 90%;
-    justify-content: center;
-}
-
-.divaftermanagerspanflip{
-    right: unset !important;
-    left: 60% !important;
-    bottom: 100% !important;
-
-}
-
-.div-after-union{
-    position: absolute;width: auto;height: auto;z-index: 5;padding: 20px;display: flex;flex-direction: row;align-items: center;justify-content: space-between;
-}
-.div-content-data-comment{
-    margin-right: 50px;
-}
-
-.showmanageropinion:hover{
-    cursor: pointer;
-}
-
-.divshowdetails{
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-.divshowdetails span:nth-child(2){
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-}
-
-
-.img-item-carosel{
-    opacity: 0.5;
-}
-
-.img-item-carosel:hover{
-    opacity: 1;
-}
-
-.img-item-level{
-    opacity: 0.5;
-}
-.img-item-level:hover{
-    opacity: 1;
-}
-
-.img-union{
-    position: absolute;width: 100%;height: 100%;z-index: 3;
-}
-.customtooltip{
-    width: 20px;height: 20px;margin-left: 8px;
-      animation: mymove 1.5s;
-    animation-iteration-count: infinite;
-
-}
-.div-req-type-content{
-    opacity: 0.4;
-}
-.div-req-type-content-active{
-    opacity: 1;
-}
-.div-req-type-content-deactive{
-    opacity: 0.4;
-}
-
-.div-req-type-comment,.div-req-type-content{
-    width: 33%;
-}
-
-.div-req-type-comment{
-    opacity: 0.4;
-}
-
-.div-req-type-comment:hover{
-    opacity: 1;
-}
-
-.div-req-type-comment-b{
-    color:#6b2498;
-    font-family: Sepahbod;
-    cursor: pointer;
-    font-size: 14px;
-}
-.div-req-type-comment-b:hover{
-    color:#16b5ea;
-}
-
-.div-req-type-comment-li{
-    color: #0b3d91;
-    font-size:12px ;
-    margin-top: 10px;
-    font-family: MTNIrancellBd;
-}
-
-.div-req-type-comment-span{
-    font-family: Titr;
-    font-size: 18px;
-    color: #0b3d91;
-}
-
-.div-alert-change-req-type{
-    width: 100%;
-    position: fixed;
-    height: auto;
-    top: 40%;
-    left: 0;
-    display: none;
-    z-index: 5000;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-}
-
-.div-alert-change-req-type-close{
-    float: left;
-    color: red;
-    z-index: 500000;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 30px;
-    margin-left: 5px;
-    margin-top: 5px;
-    cursor: pointer;
-}
-.div-alert-change-req-type-p-middle{
-    font-family: Koodak;
-    font-size: 18px;
-    word-wrap: break-word;
-    width: 97%;
-    padding-right: 10px;
-    padding-top: 5px;
-}
-.div-alert-change-req-type-p-top{
-    font-size: 16px;
-    font-family: Koodak;
-    border-radius: 0!important;
-    margin-top: 5px;
-    width: 97%;
-    padding-right: 10px;
-    padding-top: 5px;
-}
-
-.customhr{
-    color: dimgray;
-    border: 2px solid !important;
-
-}
-
-.jconfirm-content div{
-    font-family: Sepahbod !important;
-    font-size: 15px !important;
-    overflow: hidden !important;
-}
-
-.aggreedisaggree:hover{
-    box-shadow: 3px 3px 3px 3px black;
-}
-
-
-
-
-@keyframes mymove {
-  from {opacity: 0.1}
-  to {opacity: 1}
-}
-
-
-
-
-
-
-
-
-
-
-label{
-    font-family: homa;
-}
-
-td,span{
-    font-family: Koodak;
-}
-
-th{
-    font-family: Jadid;
-<<<<<<< HEAD
-=======
-    font-size: 15pt;
->>>>>>> 9be282a1398b97ec96cbefe20fd17f04fe0c80e1
-}
-
-button{
-    font-family: Titr;
-}
-
-select,input{
-    font-family: MTNIrancellBd;
-}
-
-a,p{
-    font-family: Sepahbod;
-}
-h1,h2,h3,h4,h5,h6{
-    font-family: Traffic;
-}
-
-ul,li{
-    list-style: none;
-}
-
-
-
-/****************************list report****************************/
-
-.report_changeteamrole .Textlist{
-    background-color: #0f09e0!important;
-    color: white;!important;
-}
-.report_changeteamrole .search_icon{
-    width:3%;
-    height:3%;
-    cursor: pointer;
-}
-
-.report_changeteamrole .user-list tr.tr-href:hover{
-    cursor: pointer;
-    background-color: lightgray;
-}
-
-.table-striped > tbody > tr:nth-of-type(odd) {
-    background-color: lightblue;
-}
-
-.report_changeteamrole input{
-    position: relative;
-    border-bottom: 2px solid #cccccc;
-    margin-bottom: 41px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-
-
-<<<<<<< HEAD
-.report_changeteamrole .titr{
-    font-size: 11pt;
-=======
-.report_changeteamrole .Textlist{
-    font-size: 10pt;
-    font-family:Titr ;
->>>>>>> 9be282a1398b97ec96cbefe20fd17f04fe0c80e1
-}
-
-.report_changeteamrole .combo-filter {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  height: 28px;
-  width: 220px;
-  background: #798ce2;
-  border: 1px solid;
-  border-color: white #f7f7f7 whitesmoke;
-  border-radius: 3px;
-  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
-  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
-  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
-  /* -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08); */
-  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08); */
-}
-
-.report_changeteamrole .combo-filter:before, .combo-filter:after {
-  content: '';
-  position: absolute;
-  z-index: 2;
-  top: 9px;
-  left: 10px;
-  width: 0;
-  height: 0;
-  border: 4px dashed;
-  border-color: #ffffff transparent;
-  pointer-events: none;
-}
-
-.report_changeteamrole .combo-filter:before {
-  border-bottom-style: solid;
-  border-top: none;
-}
-
-.report_changeteamrole .combo-filter:after {
-  margin-top: 7px;
-  border-top-style: solid;
-  border-bottom: none;
-}
-
-.report_changeteamrole .combo-filter-select {
-  position: relative;
-  width: 130%;
+* {
   margin: 0;
-  padding: 6px 8px 6px 10px;
-  height: 28px;
-  line-height: 14px;
-  font-size: 12px;
-  color: #ffffff;
-  text-shadow: 0 1px white;
-  background: #f2f2f2; /* Fallback for IE 8 */
-  background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-sec {
+	background: url(../img/gradient.png);
+	background-size: cover;
+}
+
+.hero-sec .UserName {
+  font-size: 42px;
+}
+
+.primaryColor {
+  color: #0B99E9;
+}
+
+.secondaryColor {
+  color: rgb(54, 108, 144);
+}
+
+.primaryColorBg {
+  background: rgba(192, 225, 246, 0.45);
+}
+
+.primaryButton {
+  background: rgba(192, 225, 246, 0.45);
+  border:1px solid rgba(192, 225, 246, 0.45)
+}
+
+.primaryButton:hover {
+  background: rgb(54, 108, 144);
+  border:1px solid rgba(192, 225, 246, 0.45)
+}
+
+
+.inputs {
   border: 0;
-  border-radius: 0;
-  -webkit-appearance: none;
+  outline: 0;
+  color: rgb(60, 66, 87);
+  background-color: rgba(240, 240, 240, 0.583);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 4px 8px;
+  min-height: 28px;
+  vertical-align: middle;
+  transition: background-color 0.24s, box-shadow 0.24s;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.24s, 0.24s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+.inputs :focus {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(58, 151, 212, 0.36) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 }
 
-.report_changeteamrole .combo-filter-select:focus {
-  z-index: 3;
-  width: 100%;
-  color: #394349;
-  outline: 2px solid #49aff2;
-  outline: 2px solid -webkit-focus-ring-color;
-  outline-offset: -2px;
+.profile-container {
+  border-radius: 25% 25% 25% 25%/40% 41% 39% 39%;
 }
 
-.report_changeteamrole .combo-filter-select > option {
-  margin: 3px;
-  padding: 6px 8px;
-  text-shadow: none;
-  background: #f2f2f2;
-  border-radius: 3px;
-  cursor: pointer;
+.profile-pic {
+  border-radius: 25% 25% 25% 25%/40% 41% 39% 39%;
+  background-color: #0B99E9;
+  width: 234px;
+  height: 234px;
 }
 
-/* Fix for IE 8 putting the arrows behind the select element. */
-
-.lt-ie9 .combo-filter {
-  z-index: 1;
+.team-profile img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-.lt-ie9 .combo-filter-select {
-  z-index: -1;
-}
-
-.lt-ie9 .combo-filter-select:focus {
-  z-index: 3;
-<<<<<<< HEAD
-}
-=======
-}
-.report_changeteamrole tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-    font-family:Sepahbod ;
-    font-size: 5pt;
-}
-
-.report_changeteamrole td{
-    font-size: 11pt;
-    font-family:Koodak ;
-}
-
-
-.report_changeteamrole .text-table{
-    text-align: center;
-}
-
-
-
-.report_changeteamrole .icon{
-    width: 50px;
-    height: 50px;
-}
-
-.report_changeteamrole #example_filter{
-    display: none!important;
-}
-
-.report_changeteamrole .button{
-    margin: 1%;
-}
-
-.report_changeteamrole button{
-    display: contents;
-}
->>>>>>> 9be282a1398b97ec96cbefe20fd17f04fe0c80e1
-
-.textSz{
-    font-size: 12px;
-}
-
-.primaryColor{
-
-    background-color: #6575ff;
-    
-}
-.primaryColor:hover{
-    background-color:#4557f5;
-}
-.titleMain{
-    height: 300px;
-}
-.searchButton{
-    height: 30px;
-}
+.teamBanner {
+  background: #6990AB;
+  height: 30px;
+}/*# sourceMappingURL=style.css.map */
