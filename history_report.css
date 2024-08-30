@@ -1,0 +1,126 @@
+form .role_level
+{
+    width: 40px;
+    height: 40px;
+}
+form p.history_report_table
+{
+    font-family: Titr;
+}
+form input[type="text"]
+{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: rgba(238, 238, 238, 0.532);
+}
+form>div
+{
+    display:flex;
+
+}
+form p.title{
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+form .operation-type
+{
+    width: 60px;
+    height: 60px;
+}
+.error
+{
+    font-family: Titr;
+    color: red;
+    width: 100%;
+    text-align: center;
+    font-size: 20pt;
+}
+.history_report_table .operation-type
+{
+    width: 50px;
+    height: 50px;
+
+}
+.history_report_table .user_profile
+{
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.history_report_table .team_icon
+{
+    width: 40px;
+    height: 40px;
+}
+
+.history_report_table .role_level
+{
+    width: 40px;
+}
+.history_report_table tbody tr:nth-child(even)
+{
+    background-color: #d4f3fa;
+}
+
+.history_report_table tbody tr:hover
+{
+    background-color: #fafbeb;
+    cursor: pointer;
+}
+.history_report_table th
+{
+    font-family: Titr;
+    text-align: center;
+    color: white;
+}
+.history_report_table thead
+{
+    background-color: #00142a;
+    border-radius: 50px;
+
+}
+
+
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; }
+    .table-responsive > .table-bordered {
+      border: 0; }
+
+
+.history_report_table td
+{
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin:auto; 
+  font: 13px Arial;
+ }
+ 
+ td {
+  padding:10px;
+  border: solid 1px gray;
+  background: wheat;
+ }
+ 
+ th {
+    padding: 10px;
+    border-radius:8px 8px 0px 0px;
+    border: solid 1px #fff;
+    border-bottom: solid 1px #000;
+    text-align:center;
+    font:18px Arial; font-weight:bold;
+    background: white;
+ }

@@ -1,0 +1,26 @@
+jQuery(function ($) {
+
+});
+$(document).ready(function () {
+    $(".ChChanges.change-salary").click(function () {
+        var currentSate = $(".ChChanges.change-salar").is(":checked")
+        if (currentSate) {
+            $("input[name='Salary']").prop("disabled", false)
+        } else {
+            $("input[name='Salary']").prop("disabled", true)
+
+        }
+
+    })
+
+    $(".ChChanges.change-salary").ready(function () {
+        var currentSate = $(".ChChanges.change-salar").is(":checked")
+        if (currentSate) {
+            $("input[name='Salary']").prop("disabled", true)
+        } else {
+            $("input[name='Salary']").prop("disabled", false)
+
+        }
+
+    })
+})

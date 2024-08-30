@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://192.168.27.60:50000/ProcessManagement/ChangeTeamRole/HistoryReport/ -->
+<html lang="fa" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> تغییر تیم و سمت (گزارش سوابق) </title>
+    <!-- MDB icon -->
+    <link rel="icon" href="http://192.168.27.60:50000/static_eit/EIT/images/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./تغییر تیم و سمت (گزارش سوابق)_files/all.css">
+    <link rel="stylesheet" href="./تغییر تیم و سمت (گزارش سوابق)_files/fontawesome.css">
+    <link rel="stylesheet" href="./تغییر تیم و سمت (گزارش سوابق)_files/mdb.rtl.min.css">
+    <link rel="stylesheet" href="./تغییر تیم و سمت (گزارش سوابق)_files/jquery-confirm.css">
+    <link rel="stylesheet" href="./تغییر تیم و سمت (گزارش سوابق)_files/font-style.css">
+    <link rel="stylesheet" href="./تغییر تیم و سمت (گزارش سوابق)_files/common-style.css">
+    <link rel="stylesheet" href="./تغییر تیم و سمت (گزارش سوابق)_files/select2.min.css">
+    <link rel="stylesheet" href="./تغییر تیم و سمت (گزارش سوابق)_files/jquery.qtip.css">
+    <link rel="stylesheet" href="./تغییر تیم و سمت (گزارش سوابق)_files/style.css">
+     
+    <script type="text/javascript" src="./تغییر تیم و سمت (گزارش سوابق)_files/mdb.min.js.download"></script><style>INPUT:-webkit-autofill,SELECT:-webkit-autofill,TEXTAREA:-webkit-autofill{animation-name:onautofillstart}INPUT:not(:-webkit-autofill),SELECT:not(:-webkit-autofill),TEXTAREA:not(:-webkit-autofill){animation-name:onautofillcancel}@keyframes onautofillstart{}@keyframes onautofillcancel{}</style>
+    <script type="text/javascript" src="./تغییر تیم و سمت (گزارش سوابق)_files/jquery-3.6.0.min.js.download"></script>
+    <script type="text/javascript" src="./تغییر تیم و سمت (گزارش سوابق)_files/jquery-confirm.js.download"></script>
+    <script type="text/javascript" src="./تغییر تیم و سمت (گزارش سوابق)_files/common.js.download"></script>
+    <script type="text/javascript" src="./تغییر تیم و سمت (گزارش سوابق)_files/bootstrap-modal-js.min.js.download"></script>
+    <script type="text/javascript" src="./تغییر تیم و سمت (گزارش سوابق)_files/select2.min.js.download"></script>
+    <script type="text/javascript" src="./تغییر تیم و سمت (گزارش سوابق)_files/jquery.qtip.js.download"></script>
+    <script type="text/javascript" src="./تغییر تیم و سمت (گزارش سوابق)_files/index.js.download"></script>
+
+     
+    
+    <link rel="stylesheet" href="./تغییر تیم و سمت (گزارش سوابق)_files/history_report.css">
+
+    
+    <script type="text/javascript" src="./تغییر تیم و سمت (گزارش سوابق)_files/history_report.js.download"></script>
+
+    <script src="./تغییر تیم و سمت (گزارش سوابق)_files/tailwind.js"></script>
+     
+  </head>
+  <body>
+
+        
+    <div class="container flex flex-row  justify-center items-start">
+        <form class="flex flex-col justify-center p-3 " method="post">
+            <div class="flex my-3 justify-between">
+                <input type="hidden" name="csrfmiddlewaretoken" value="n285djJ871fZUy0EfwRMRJFHdXGYLGK6tgMgPhxTQo4x2cmqIXcaJENKjxwdEXBn">
+                <label class="me-2">از تاریخ</label>
+                <input type="text" name="from-date" value="" class="px-2">
+                <label class="me-2">تا تاریخ</label>
+                <input type="text" name="to-date" value="" class="px-2">
+                <label class="me-2">نام و نام خانوادگی</label>
+                <input type="text" name="fullname" value="" class="px-2">
+                <div class="flex ms-5">
+                    <button type="submit" class="text-white primaryColor focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center w-fit searchButton">
+                        <svg class="me-1" viewBox="0 0 24 24" width="20px" height="20px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        جستجو
+                    </button>
+                </div>
+            </div>
+            <div class="flex justify-between items-center w-full p-3 shdow">
+                <span class="space-x-7">
+                    <p class="title rotate-90">عملیات</p>
+                </span>
+                <input type="radio" name="operation-type" value="LEUP">
+                 <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/LEUP.png" alt="" class=" operation-type rounded-full">             
+                <input type="radio" name="operation-type" value="ROUP">
+                <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/ROUP.png" alt="ارتقا سمت" title="ارتقا سمت" class="operation-type">
+                <input type="radio" name="operation-type" value="SUPR">
+                <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/SUPR.png" alt="ارشد شدن" title="ارشد شدن" class="operation-type">
+                <br>        
+                <input type="radio" name="operation-type" value="ENTR">
+                <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/ENTR.png" alt="ورود به تیم" title="ورود به تیم" class="operation-type">
+                <input type="radio" name="operation-type" value="NERO">
+                <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/new_role.png" alt="سمت جدید" title="سمت جدید" class="operation-type">
+                <input type="radio" name="operation-type" value="NETE">
+                <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/NETE.png" alt="تیم جدید" title="تیم جدید" class="operation-type">
+                <br>        
+                <input type="radio" name="operation-type" value="TECH">
+                <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/change_team.png" alt="تغییر تیم" title="تغییر تیم" class="operation-type">
+                <input type="radio" name="operation-type" value="EXIT">
+                <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/EXIT.png" alt="خروج از شرکت" title="خروج از شرکت" class="operation-type">
+                <input type="radio" name="operation-type" value="INAC">
+                <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Deactuivation.png" alt="غیرفعال سازی" title="غیرفعال سازی" class="operation-type">
+                <br>        
+
+            </div>
+
+            <div class=" flex justify-center items-center mt-3 shdow rounded-md p-3 w-auto">
+                <span class="space-x-4 me-3">
+                    <p class="title rotate-90">مبدا</p>
+                </span>
+                <label class="me-2">تیم</label>
+                <input type="text" name="source-team-name" value="" autocompleted="" class="px-2">
+                <label class="me-2">سمت</label>
+                <input type="text" name="source-role-name" value="" class="px-2">
+                <label class="me-5">سطح</label>
+                <div class="flex">
+                    <input type="radio" name="source-level" value="1">
+                    <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/senior+active.png" alt="senior+" title="senior+" class="role_level">
+                    <input type="radio" name="source-level" value="2" class="ms-2">
+                    <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/senioractive.png" alt="senior" title="senior" class="role_level">
+                    <input type="radio" name="source-level" value="3" class="ms-2">
+                    <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/middle+active.png" alt="middle+" title="middle+" class="role_level">
+                    <input type="radio" name="source-level" value="4" class="ms-2">
+                    <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/middleactive.png" alt="middle" title="middle" class="role_level">
+                    <input type="radio" name="source-level" value="5" class="ms-2">
+                    <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/junior+active.png" alt="junior+" title="junior+" class="role_level">
+                    <input type="radio" name="source-level" value="6" class="ms-2">
+                    <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/junioractive.png" alt="junior" title="junior" class="role_level">
+                </div>
+            </div>
+
+            <div class=" flex justify-center items-center mt-3 shdow rounded-md p-3 w-auto">
+                <span class="space-x-4 me-3">
+                    <p class="title rotate-90">مقصد</p>
+                </span>
+                <label class="me-2">تیم</label>
+                <input type="text" name="target-team-name" value="باربر" class="px-2">
+                <label class="me-2">سمت</label>
+                <input type="text" name="target-role-name" value="" class="px-2">
+                <label class="me-5">سطح</label>
+                <div class="flex">
+                    <input type="radio" name="target-level" value="1" >
+                    <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/senior+active.png" alt="senior+" title="senior+" class="role_level">
+                    <input type="radio" name="target-level" value="2" class="ms-2">
+                    <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/senioractive.png" alt="senior" title="senior" class="role_level">
+                    <input type="radio" name="target-level" value="3" class="ms-2">
+                    <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/middle+active.png" alt="middle+" title="middle+" class="role_level">
+                    <input type="radio" name="target-level" value="4" class="ms-2">
+                    <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/middleactive.png" alt="middle" title="middle" class="role_level">
+                    <input type="radio" name="target-level" value="5" class="ms-2">
+                    <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/junior+active.png" alt="junior+" title="junior+" class="role_level">
+                    <input type="radio" name="target-level" value="6" class="ms-2">
+                    <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/junioractive.png" alt="junior" title="junior" class="role_level">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="flex p-5">
+
+            <table class="history_report_table table table-responsive-xl shdow">
+                <thead>
+                    <tr class="rounded-tr-lg ">
+                        <th>
+                            تصویر
+                        </th>
+                        <th>
+                            نام و نام خانوادگی
+                        </th>
+                        <th>
+                            نوع عملیات
+                        </th>
+                        <th>
+                            تاریخ
+                        </th>
+                        <th>
+                            تیم مبدا
+                        </th>
+                        <th>
+                            سمت مبدا
+                        </th>
+                        <th>
+                            سطح مبدا
+                        </th>
+                        <th>
+                            تیم مقصد
+                        </th>
+                        <th>
+                            سمت مقصد
+                        </th>
+                        <th>
+                            سطح مقصد
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/m.nilechi.jpg" alt="m.nilechi@eit" title="مطهره نيله چي" class="user_profile" onerror="this.onerror=null; this.src=&#39;/static/ChangeTeamRole/images/no-profile-mr.png&#39;">
+                        </td>
+                        <td>
+                            مطهره نيله چي
+                        </td>
+                        <td class="flex justify-center items-center">
+
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/change_team.png" alt="تغییر تیم" title="تغییر تیم" class="operation-type">                        
+                            
+                        </td>
+                        <td>
+                            1402/12/09 
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Gray-ENG.png" alt="مهندسي و خاص" title="مهندسي و خاص" class="team_icon">
+                        </td>
+                        <td>
+                            تحليل گر کسب و کار
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Middle.png" alt="Middle" title="" class="role_level">
+                            
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/CAG.png" alt="باربري" title="باربري" class="team_icon">
+                        </td>
+                        <td>
+                            تحليل گر کسب و کار
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/middleactive(1).png" alt="Middle" title="Middle" class="role_level">
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/no-profile-mr.png" alt="f.kazempour@eit" title="فرشيد کاظم پور" class="user_profile" onerror="this.onerror=null; this.src=&#39;/static/ChangeTeamRole/images/no-profile-mr.png&#39;">
+                        </td>
+                        <td>
+                            فرشيد کاظم پور
+                        </td>
+                        <td class="flex justify-center items-center">
+
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/ENTR.png" alt="ورود به تیم" title="ورود به تیم" class="operation-type">                        
+                            
+                        </td>
+                        <td>
+                            1402/12/26 
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Gray-EDU.png" alt="جذب و آموزش" title="جذب و آموزش" class="team_icon">
+                        </td>
+                        <td>
+                            پرسنل آموزشي
+                        </td>
+                        <td>
+                            
+                            -
+                            
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/CAG.png" alt="باربري" title="باربري" class="team_icon">
+                        </td>
+                        <td>
+                            برنامه نويس
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/middleactive(1).png" alt="Middle" title="Middle" class="role_level">
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/no-profile-mr.png" alt="n.hajisafari@eit" title="نازنين حاجي صفري" class="user_profile" onerror="this.onerror=null; this.src=&#39;/static/ChangeTeamRole/images/no-profile-mr.png&#39;">
+                        </td>
+                        <td>
+                            نازنين حاجي صفري
+                        </td>
+                        <td class="flex justify-center items-center">
+
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/ENTR.png" alt="ورود به تیم" title="ورود به تیم" class="operation-type">                        
+                            
+                        </td>
+                        <td>
+                            1403/02/23 
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Gray-EDU.png" alt="جذب و آموزش" title="جذب و آموزش" class="team_icon">
+                        </td>
+                        <td>
+                            پرسنل آموزشي
+                        </td>
+                        <td>
+                            
+                            -
+                            
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/CAG.png" alt="باربري" title="باربري" class="team_icon">
+                        </td>
+                        <td>
+                            تستر
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/junioractive(1).png" alt="Junior" title="Junior" class="role_level">
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/K.Kashfi.jpg" alt="K.Kashfi@eit" title="کيان کشفي" class="user_profile" onerror="this.onerror=null; this.src=&#39;/static/ChangeTeamRole/images/no-profile-mr.png&#39;">
+                        </td>
+                        <td>
+                            کيان کشفي
+                        </td>
+                        <td class="flex justify-center items-center">
+
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/EXIT.png" alt="خروج از شرکت" title="خروج از شرکت" class="operation-type">                        
+                            
+                        </td>
+                        <td>
+                            1403/03/01 
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Gray-CAG.png" alt="باربري" title="باربري" class="team_icon">
+                        </td>
+                        <td>
+                            برنامه نويس
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Middle+.png" alt="Middle+" title="" class="role_level">
+                            
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/CAG.png" alt="باربري" title="باربري" class="team_icon">
+                        </td>
+                        <td>
+                            برنامه نويس
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/middle+active(1).png" alt="Middle+" title="Middle+" class="role_level">
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/no-profile-mr.png" alt="A.Mohammadvandazad@eit" title="آتنا محمدوند آزاد" class="user_profile" onerror="this.onerror=null; this.src=&#39;/static/ChangeTeamRole/images/no-profile-mr.png&#39;">
+                        </td>
+                        <td>
+                            آتنا محمدوند آزاد
+                        </td>
+                        <td class="flex justify-center items-center">
+
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/EXIT.png" alt="خروج از شرکت" title="خروج از شرکت" class="operation-type">                        
+                            
+                        </td>
+                        <td>
+                            1403/03/01 
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Gray-CAG.png" alt="باربري" title="باربري" class="team_icon">
+                        </td>
+                        <td>
+                            برنامه نويس
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Junior.png" alt="Junior" title="" class="role_level">
+                            
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/CAG.png" alt="باربري" title="باربري" class="team_icon">
+                        </td>
+                        <td>
+                            برنامه نويس
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/junioractive(1).png" alt="Junior" title="Junior" class="role_level">
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/e.azadi.jpg" alt="e.azadi@eit" title="الهه آزادي" class="user_profile" onerror="this.onerror=null; this.src=&#39;/static/ChangeTeamRole/images/no-profile-mr.png&#39;">
+                        </td>
+                        <td>
+                            الهه آزادي
+                        </td>
+                        <td class="flex justify-center items-center">
+
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/change_team.png" alt="تغییر تیم" title="تغییر تیم" class="operation-type">                        
+                            
+                        </td>
+                        <td>
+                            1403/03/05 
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Gray-CAR.png" alt="خودرو" title="خودرو" class="team_icon">
+                        </td>
+                        <td>
+                            گزارش ساز
+                        </td>
+                        <td>
+                            
+                            -
+                            
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/CAG.png" alt="باربري" title="باربري" class="team_icon">
+                        </td>
+                        <td>
+                            گزارش ساز
+                        </td>
+                        <td>
+                            
+                            -
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/no-profile-mr.png" alt="Sh.Samiee@eit" title="شيما سميعي" class="user_profile" onerror="this.onerror=null; this.src=&#39;/static/ChangeTeamRole/images/no-profile-mr.png&#39;">
+                        </td>
+                        <td>
+                            شيما سميعي
+                        </td>
+                        <td class="flex justify-center items-center">
+
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/change_team.png" alt="تغییر تیم" title="تغییر تیم" class="operation-type">                        
+                            
+                        </td>
+                        <td>
+                            1403/04/03 
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Gray-CAR.png" alt="خودرو" title="خودرو" class="team_icon">
+                        </td>
+                        <td>
+                            پشتيبان
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Junior+.png" alt="Junior+" title="" class="role_level">
+                            
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/CAG.png" alt="باربري" title="باربري" class="team_icon">
+                        </td>
+                        <td>
+                            پشتيبان
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/junior+active(1).png" alt="Junior+" title="Junior+" class="role_level">
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/a.nikpour.jpg" alt="a.nikpour@eit" title="افسانه نيک پورقنواتي" class="user_profile" onerror="this.onerror=null; this.src=&#39;/static/ChangeTeamRole/images/no-profile-mr.png&#39;">
+                        </td>
+                        <td>
+                            افسانه نيک پورقنواتي
+                        </td>
+                        <td class="flex justify-center items-center">
+                        
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/TECH.png" alt="تغییر تیم" title="تغییر تیم" class="operation-type">                        
+                            
+                        </td>
+                        <td>
+                            1403/04/03 
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Gray-CAR.png" alt="خودرو" title="خودرو" class="team_icon">
+                        </td>
+                        <td>
+                            پشتيبان
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Middle+.png" alt="Middle+" title="" class="role_level">
+                            
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/CAG.png" alt="باربري" title="باربري" class="team_icon">
+                        </td>
+                        <td>
+                            پشتيبان
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/middle+active(1).png" alt="Middle+" title="Middle+" class="role_level">
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/no-profile-mr.png" alt="m.haddadi@eit" title="سيدمحمدحسين حدادي زحمت کش" class="user_profile" onerror="this.onerror=null; this.src=&#39;/static/ChangeTeamRole/images/no-profile-mr.png&#39;">
+                        </td>
+                        <td>
+                            سيدمحمدحسين حدادي زحمت کش
+                        </td>
+                        <td class="flex justify-center items-center">
+
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/EXIT.png" alt="خروج از شرکت" title="خروج از شرکت" class="operation-type">                        
+                            
+                        </td>
+                        <td>
+                            1403/05/31 
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Gray-CAG.png" alt="باربري" title="باربري" class="team_icon">
+                        </td>
+                        <td>
+                            تحليل گر کسب و کار
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/Middle.png" alt="Middle" title="" class="role_level">
+                            
+                        </td>
+                        <td>
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/CAG.png" alt="باربري" title="باربري" class="team_icon">
+                        </td>
+                        <td>
+                            تحليل گر کسب و کار
+                        </td>
+                        <td>
+                            
+                            <img src="./تغییر تیم و سمت (گزارش سوابق)_files/img/middleactive(1).png" alt="Middle" title="Middle" class="role_level">
+                            
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+      
+
+    </div>
+        
+
+
+  
+</body></html>
